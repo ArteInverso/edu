@@ -5,6 +5,11 @@
  */
 package com.example.reto5.vistas;
 
+import com.example.reto5.SpringContext;
+import com.example.reto5.repositorios.RepositorioPeliculas;
+import com.example.reto5.repositorios.RepositorioSeries;
+import com.example.reto5.repositorios.RepositorioUsuarios;
+
 /**
  *
  * @author juan sebastian
@@ -14,7 +19,14 @@ public class Ventana extends javax.swing.JFrame {
     /**
      * Creates new form Ventana
      */
+    RepositorioUsuarios repositorioUsuarios;
+    RepositorioPeliculas repositorioPeliculas;
+    RepositorioSeries repositorioSeries;
+
     public Ventana() {
+        repositorioUsuarios = SpringContext.getBean(RepositorioUsuarios.class);
+        repositorioPeliculas = SpringContext.getBean(RepositorioPeliculas.class);
+        repositorioSeries = SpringContext.getBean(RepositorioSeries.class);
         initComponents();
     }
 

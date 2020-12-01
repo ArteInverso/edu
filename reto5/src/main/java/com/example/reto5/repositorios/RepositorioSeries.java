@@ -5,7 +5,7 @@
  */
 package com.example.reto5.repositorios;
 
-import com.example.reto5.entidades.serie;
+import com.example.reto5.entidades.Serie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author juan sebastian
  */
 @Repository
-public interface RepositorioSeries extends JpaRepository<serie, Integer>{
+public interface RepositorioSeries extends JpaRepository<Serie, Integer>{
     
 }

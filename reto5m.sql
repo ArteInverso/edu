@@ -1,14 +1,5 @@
--- -----------------------------------------------------
--- Schema reto5m
--- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `reto5m` ;
-
--- -----------------------------------------------------
--- Schema reto5m
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `reto5m` DEFAULT CHARACTER SET utf8 ;
-USE `reto5m` ;
-
+create database reto5m;
+use reto5m;
 -- -----------------------------------------------------
 -- Table `reto5m`.`Director`
 -- -----------------------------------------------------
@@ -21,8 +12,6 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Director` (
   `nacionalidad` VARCHAR(45) NULL,
   PRIMARY KEY (`idDirector`))
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `reto5m`.`Pelicula`
 -- -----------------------------------------------------
@@ -42,8 +31,6 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Pelicula` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `reto5m`.`Serie`
 -- -----------------------------------------------------
@@ -56,8 +43,6 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Serie` (
   `temporadas` INT NULL,
   PRIMARY KEY (`idSerie`))
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `reto5m`.`Contenidos`
 -- -----------------------------------------------------
@@ -81,8 +66,6 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Contenidos` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `reto5m`.`Usuario`
 -- -----------------------------------------------------
@@ -98,8 +81,6 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Usuario` (
   `nacimiento` DATE NULL,
   PRIMARY KEY (`alias`))
 ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `mydb`.`Transmisiones`
 -- -----------------------------------------------------
@@ -123,4 +104,3 @@ CREATE TABLE IF NOT EXISTS `reto5m`.`Transmisiones` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-

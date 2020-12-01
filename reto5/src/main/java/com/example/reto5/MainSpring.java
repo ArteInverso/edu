@@ -23,16 +23,13 @@ import org.springframework.stereotype.Component;
 public class MainSpring implements CommandLineRunner{
     
     @Autowired
-    RepositorioDirectores repositorioDirectores;
-    RepositorioContenidos repositorioContenidos;
     RepositorioPeliculas repositorioPeliculas;
     RepositorioSeries repositorioSeries;
-    RepositorioTransmisiones repositorioTransmisiones;
     RepositorioUsuarios repositorioUsuarios;
     
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(repositorioDirectores.count());        
+        System.out.println(repositorioSeries.count());
     }
     
 }

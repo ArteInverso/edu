@@ -5,7 +5,7 @@
  */
 package com.example.reto5.repositorios;
 
-import com.example.reto5.entidades.transmisiones;
+import com.example.reto5.entidades.Transmisiones;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author juan sebastian
  */
 @Repository
-public interface RepositorioTransmisiones extends JpaRepository<transmisiones, Integer>{
+public interface RepositorioTransmisiones extends JpaRepository<Transmisiones, Integer>{
     
 }

@@ -5,7 +5,7 @@
  */
 package com.example.reto5.repositorios;
 
-import com.example.reto5.entidades.usuario;
+import com.example.reto5.entidades.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author juan sebastian
  */
 @Repository
-public interface RepositorioUsuarios extends JpaRepository<usuario, String>{
+public interface RepositorioUsuarios extends JpaRepository<Usuario, String>{
     
 }

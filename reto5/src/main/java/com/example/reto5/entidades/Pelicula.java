@@ -17,7 +17,7 @@ import javax.persistence.OneToMany;
  * @author juan sebastian
  */
 @Entity
-public class pelicula {
+public class Pelicula {
     @Id
     @ManyToOne
     @JoinColumn(name = "Pelicula_idPelicula1")
@@ -26,7 +26,7 @@ public class pelicula {
     String resumen;
     Integer anno;
     @OneToMany(mappedBy = "idDirector")
-    Set<director> Director_idDirector;  
+    Set<Director> Director_idDirector;
 
     public Integer getIdPelicula() {
         return idPelicula;
@@ -60,17 +60,17 @@ public class pelicula {
         this.anno = anno;
     }
 
-    public Set<director> getDirector_idDirector() {
+    public Set<Director> getDirector_idDirector() {
         return Director_idDirector;
     }
 
-    public void setDirector_idDirector(Set<director> Director_idDirector) {
+    public void setDirector_idDirector(Set<Director> Director_idDirector) {
         this.Director_idDirector = Director_idDirector;
     }
 
     @Override
     public String toString() {
-        return "pelicula{" + "idPelicula=" + idPelicula + ", titulo=" + titulo + ", resumen=" + resumen + ", anno=" + anno + ", Director_idDirector=" + Director_idDirector + '}';
+        return "Pelicula{" + "idPelicula=" + idPelicula + ", titulo=" + titulo + ", resumen=" + resumen + ", anno=" + anno + ", Director_idDirector=" + Director_idDirector + '}';
     }
     
     

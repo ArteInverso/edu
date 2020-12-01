@@ -18,7 +18,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Usuario {
     @Id
-    @ManyToOne
+    @ManyToOne //Deacuerdo al modelo, deberia ser @OneToMany
     @JoinColumn(name = "Usuario_alias")
     String alias;
     @Column(name = "nombre") // No esnecesario si los nombres son iguales acá y en Workbench
