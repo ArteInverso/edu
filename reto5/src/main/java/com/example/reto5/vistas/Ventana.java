@@ -5,6 +5,7 @@
  */
 package com.example.reto5.vistas;
 
+import com.example.reto5.Reto5Application;
 import com.example.reto5.SpringContext;
 import com.example.reto5.repositorios.RepositorioPeliculas;
 import com.example.reto5.repositorios.RepositorioSeries;
@@ -24,6 +25,7 @@ public class Ventana extends javax.swing.JFrame {
     RepositorioSeries repositorioSeries;
 
     public Ventana() {
+        Reto5Application.iniciarSpring();
         repositorioUsuarios = SpringContext.getBean(RepositorioUsuarios.class);
         repositorioPeliculas = SpringContext.getBean(RepositorioPeliculas.class);
         repositorioSeries = SpringContext.getBean(RepositorioSeries.class);
