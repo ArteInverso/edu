@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
  * @author juan sebastian
  */
 @Entity
-public class director {
+public class Director {
 
     @Id
     @ManyToOne

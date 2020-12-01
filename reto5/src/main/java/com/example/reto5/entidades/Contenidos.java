@@ -17,15 +17,15 @@ import javax.persistence.OneToMany;
  * @author juan sebastian
  */
 @Entity
-public class contenidos {
+public class Contenidos {
     @Id
     @ManyToOne
     @JoinColumn(name = "Contenidos_idContenidos")
     Integer idContenidos;
     @OneToMany(mappedBy = "idPelicula")
-    Set<pelicula> Pelicula_idPelicula1;
+    Set<Pelicula> Pelicula_idPelicula1;
     @OneToMany(mappedBy = "idSerie")
-    Set<serie> Serie_idSerie1;
+    Set<Serie> Serie_idSerie1;
 
     
     
@@ -37,19 +37,19 @@ public class contenidos {
         this.idContenidos = idContenidos;
     }
 
-    public Set<pelicula> getPelicula_idPelicula1() {
+    public Set<Pelicula> getPelicula_idPelicula1() {
         return Pelicula_idPelicula1;
     }
 
-    public void setPelicula_idPelicula1(Set<pelicula> Pelicula_idPelicula1) {
+    public void setPelicula_idPelicula1(Set<Pelicula> Pelicula_idPelicula1) {
         this.Pelicula_idPelicula1 = Pelicula_idPelicula1;
     }
 
-    public Set<serie> getSerie_idSerie1() {
+    public Set<Serie> getSerie_idSerie1() {
         return Serie_idSerie1;
     }
 
-    public void setSerie_idSerie1(Set<serie> Serie_idSerie1) {
+    public void setSerie_idSerie1(Set<Serie> Serie_idSerie1) {
         this.Serie_idSerie1 = Serie_idSerie1;
     }
 

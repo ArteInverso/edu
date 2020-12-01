@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
  * @author juan sebastian
  */
 @Entity
-public class serie {
+public class Serie {
     @Id
     @ManyToOne
     @JoinColumn(name = "Serie_idSerie1")

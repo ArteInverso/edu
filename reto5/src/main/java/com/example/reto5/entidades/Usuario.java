@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
  * @author juan sebastian
  */
 @Entity
-public class usuario {
+public class Usuario {
     @Id
     @ManyToOne
     @JoinColumn(name = "Usuario_alias")
