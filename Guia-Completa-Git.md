@@ -3,12 +3,15 @@ CONFIGURACIÓN CUANDO COMIENZO UN PROYECTO CON GIT
 *Siempre al empezar un proyecto primero primero inspecciono los elementos :
 ls
 Luego cd Desktop - y me ubico en la carpeta del proyecto en la cual voy a trabajar 
+
 git —version 
+
 git config —global user.name “Usuario”
-Git config —global user.email “tucorreo-git@gmail.com
+
+git config —global user.email “tucorreo-git@gmail.com
 
 
-$ git --version
+					$ git --version
 					
 					$ git config --global user.name "TU NOMBRE"
 					
